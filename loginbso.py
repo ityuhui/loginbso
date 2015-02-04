@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 import urllib, urllib2, httplib 
 import sys,getopt
 
