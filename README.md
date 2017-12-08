@@ -1,8 +1,15 @@
-## 配置文件
+##  使用
 
-data.txt是配置文件，里面的可配置内容有三行，第一行是需要登录的服务器地址，多台服务器地址之间用逗号分隔；第二行是用户名（IBM intranet id）;第三行是密码
+* 配置用户信息
 
-## 可执行程序
+为了快速的执行BSO登录，本工具使用AES加密保存internat id和internat password。执行initconfig.py，按提示输入internat id, internat password, 以及AES密码（16位以内），请牢记AES密码，如果忘记，只能重新执行initconfig.py再次保存internat id和password.
 
-loginbso.exe是使用pyinstaller工具，对loginbso.py转换而来的，如果需要知道如何将py转成exe，可以参考文档
+* 配置机器列表
+
+在hostlist.txt文件里，增加机器，多台机器使用逗号分隔
+
+* 执行登录
+
+loginbso.py
+
 
